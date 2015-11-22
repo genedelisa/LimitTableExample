@@ -1,10 +1,6 @@
 # Limited Table Example
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://en.wikipedia.org/wiki/MIT_License)
-[![Build Status](https://travis-ci.org/genedelisa/LimitedTableExample.svg)](https://travis-ci.org/genedelisa/LimitedTableExample)
-[![GitHub tag](https://img.shields.io/github/tag/genedelisa/LimitedTableExample.svg)](https://github.com/genedelisa/LimitedTableExample/)
-[![GitHub release](https://img.shields.io/github/release/genedelisa/LimitedTableExample.svg)](https://github.com/genedelisa/LimitedTableExample/)
-[![GitHub commits](https://img.shields.io/github/commits-since/genedelisa/LimitedTableExample/1.0.0.svg)
 
 
 A simple of a multiselect UITableView with a limited number of selections.
@@ -12,7 +8,7 @@ A simple of a multiselect UITableView with a limited number of selections.
 
 ## Blog post for this example.
 
-[Blog post](http://www.rockhoppertech.com/blog/)
+[Blog post](http://www.rockhoppertech.com/blog/multiselect-uitableview-with-limited-selections/)
 
 
 

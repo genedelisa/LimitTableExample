@@ -39,8 +39,6 @@ class ViewController: UIViewController {
     
     let limit = 3
     
-    var numSelectedIntervals = 0
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,15 +78,18 @@ extension ViewController : UITableViewDelegate {
     
     func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         
-        if numSelectedIntervals == limit {
-            let alertController = UIAlertController(title: "Oops", message:
-                "You are limited to \(limit) selections", preferredStyle: .Alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: {action in
-            }))
-            self.presentViewController(alertController, animated: true, completion: nil)
-
-            return nil
+        if let sr = tableView.indexPathsForSelectedRows {
+            if sr.count == limit {
+                let alertController = UIAlertController(title: "Oops", message:
+                    "You are limited to \(limit) selections", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: {action in
+                }))
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                return nil
+            }
         }
+        
         return indexPath
     }
     
@@ -99,7 +100,6 @@ extension ViewController : UITableViewDelegate {
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             if cell.selected {
                 cell.accessoryType = .Checkmark
-                numSelectedIntervals++
             }
         }
         
@@ -114,7 +114,6 @@ extension ViewController : UITableViewDelegate {
         
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
             cell.accessoryType = .None
-            numSelectedIntervals--
         }
         
         if let sr = tableView.indexPathsForSelectedRows {

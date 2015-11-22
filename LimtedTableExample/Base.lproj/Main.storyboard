@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,25 +19,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hQv-N4-db0">
-                                <rect key="frame" x="100" y="100" width="400" height="400"/>
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="heu-Ze-M2M"/>
-                                    <constraint firstAttribute="width" constant="400" id="jYD-Hh-hNc"/>
+                                    <constraint firstAttribute="width" constant="350" id="jYD-Hh-hNc"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="intervalCellIdentifier" id="uvg-Wg-IU8">
-                                        <rect key="frame" x="0.0" y="28" width="400" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uvg-Wg-IU8" id="LNN-QU-FTf">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
                                         <animations/>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="heu-Ze-M2M"/>
+                                        <exclude reference="jYD-Hh-hNc"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="PsI-rJ-f8k"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="TCe-IR-Lc5"/>
@@ -46,9 +53,19 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hQv-N4-db0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5eE-lo-X8k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hQv-N4-db0" secondAttribute="bottom" id="Bou-AO-Udc"/>
+                            <constraint firstItem="hQv-N4-db0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ex6-OE-1nt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hQv-N4-db0" secondAttribute="trailing" id="MTo-CC-olK"/>
                             <constraint firstItem="hQv-N4-db0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NGT-bJ-XLb"/>
                             <constraint firstItem="hQv-N4-db0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cAz-pR-E6e"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NGT-bJ-XLb"/>
+                                <exclude reference="cAz-pR-E6e"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
