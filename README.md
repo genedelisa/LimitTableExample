@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/genedelisa/LimitedTableExample.svg)](https://travis-ci.org/genedelisa/LimitedTableExample)
 [![GitHub tag](https://img.shields.io/github/tag/genedelisa/LimitedTableExample.svg)](https://github.com/genedelisa/LimitedTableExample/)
 [![GitHub release](https://img.shields.io/github/release/genedelisa/LimitedTableExample.svg)](https://github.com/genedelisa/LimitedTableExample/)
-[![GitHub commits](https://img.shields.io/github/commits-since/genedelisa/LimitedTableExample/2.0.0.svg)
+[![GitHub commits](https://img.shields.io/github/commits-since/genedelisa/LimitedTableExample/1.0.0.svg)
 
 
 A simple of a multiselect UITableView with a limited number of selections.
