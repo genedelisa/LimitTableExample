@@ -14,6 +14,8 @@
 		B0346D591C01EABD00DA5FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0346D571C01EABD00DA5FFD /* LaunchScreen.storyboard */; };
 		B0346D641C01EABD00DA5FFD /* LimtedTableExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0346D631C01EABD00DA5FFD /* LimtedTableExampleTests.swift */; };
 		B0346D6F1C01EABD00DA5FFD /* LimtedTableExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0346D6E1C01EABD00DA5FFD /* LimtedTableExampleUITests.swift */; };
+		B0346D7E1C01EF8D00DA5FFD /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B0346D7C1C01EF8C00DA5FFD /* README.md */; };
+		B0346D7F1C01EF8D00DA5FFD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B0346D7D1C01EF8D00DA5FFD /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		B0346D6A1C01EABD00DA5FFD /* LimtedTableExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimtedTableExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0346D6E1C01EABD00DA5FFD /* LimtedTableExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimtedTableExampleUITests.swift; sourceTree = "<group>"; };
 		B0346D701C01EABD00DA5FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0346D7C1C01EF8C00DA5FFD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0346D7D1C01EF8D00DA5FFD /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		B0346D421C01EABD00DA5FFD = {
 			isa = PBXGroup;
 			children = (
+				B0346D7C1C01EF8C00DA5FFD /* README.md */,
+				B0346D7D1C01EF8D00DA5FFD /* LICENSE */,
 				B0346D4D1C01EABD00DA5FFD /* LimtedTableExample */,
 				B0346D621C01EABD00DA5FFD /* LimtedTableExampleTests */,
 				B0346D6D1C01EABD00DA5FFD /* LimtedTableExampleUITests */,
@@ -231,6 +237,7 @@
 			files = (
 				B0346D591C01EABD00DA5FFD /* LaunchScreen.storyboard in Resources */,
 				B0346D561C01EABD00DA5FFD /* Assets.xcassets in Resources */,
+				B0346D7F1C01EF8D00DA5FFD /* LICENSE in Resources */,
 				B0346D541C01EABD00DA5FFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0346D7E1C01EF8D00DA5FFD /* README.md in Sources */,
 				B0346D511C01EABD00DA5FFD /* ViewController.swift in Sources */,
 				B0346D4F1C01EABD00DA5FFD /* AppDelegate.swift in Sources */,
 			);
