@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00B85781C0627E100F2DB3F /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = B00B85771C0627E100F2DB3F /* .travis.yml */; };
 		B0346D4F1C01EABD00DA5FFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0346D4E1C01EABD00DA5FFD /* AppDelegate.swift */; };
 		B0346D511C01EABD00DA5FFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0346D501C01EABD00DA5FFD /* ViewController.swift */; };
 		B0346D541C01EABD00DA5FFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0346D521C01EABD00DA5FFD /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B00B85771C0627E100F2DB3F /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		B0346D4B1C01EABD00DA5FFD /* LimtedTableExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LimtedTableExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0346D4E1C01EABD00DA5FFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0346D501C01EABD00DA5FFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		B0346D421C01EABD00DA5FFD = {
 			isa = PBXGroup;
 			children = (
+				B00B85771C0627E100F2DB3F /* .travis.yml */,
 				B0346D7C1C01EF8C00DA5FFD /* README.md */,
 				B0346D7D1C01EF8D00DA5FFD /* LICENSE */,
 				B0346D4D1C01EABD00DA5FFD /* LimtedTableExample */,
@@ -235,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00B85781C0627E100F2DB3F /* .travis.yml in Resources */,
 				B0346D591C01EABD00DA5FFD /* LaunchScreen.storyboard in Resources */,
 				B0346D561C01EABD00DA5FFD /* Assets.xcassets in Resources */,
 				B0346D7F1C01EF8D00DA5FFD /* LICENSE in Resources */,
@@ -492,6 +496,7 @@
 				B0346D751C01EABD00DA5FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0346D761C01EABD00DA5FFD /* Build configuration list for PBXNativeTarget "LimtedTableExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				B0346D781C01EABD00DA5FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0346D791C01EABD00DA5FFD /* Build configuration list for PBXNativeTarget "LimtedTableExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				B0346D7B1C01EABD00DA5FFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
