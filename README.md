@@ -19,7 +19,7 @@ A simple of a multiselect UITableView with a limited number of selections.
 
 [![GitHub issues](https://img.shields.io/github/issues/genedelisa/LimitedTableExample.svg)](https://github.com/genedelisa/LimitedTableExample/issues)
 
-If you find one, [please add it to issues](https://github.com/genedelisa/LimitedTableExample/issues)
+If you find one, [please add it to issues](https://github.com/genedelisa/LimitTableExample/issues)
 
 ### Buy my kitty Giacomo some cat food
 
