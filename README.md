@@ -1,6 +1,8 @@
 # Limited Table Example
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://en.wikipedia.org/wiki/MIT_License)
+[![Swift](https://img.shields.io/badge/swift-2.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Platforms](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://developer.apple.com/ios/)
 
 
 A simple of a multiselect UITableView with a limited number of selections.
