@@ -17,7 +17,7 @@ A simple of a multiselect UITableView with a limited number of selections.
 ## Bugs
 
 
-[![GitHub issues](https://img.shields.io/github/issues/genedelisa/LimitedTableExample.svg)](https://github.com/genedelisa/LimitedTableExample/issues)
+[![GitHub issues](https://img.shields.io/github/issues/genedelisa/LimitTableExample.svg)](https://github.com/genedelisa/LimitTableExample/issues)
 
 If you find one, [please add it to issues](https://github.com/genedelisa/LimitTableExample/issues)
 
