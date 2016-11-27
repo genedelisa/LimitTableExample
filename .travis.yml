@@ -1,5 +1,23 @@
+# file: .travis.yml
+
 language: objective-c
-xcode_workspace: LimitedTableExample.xcworkspace # path to your xcodeproj folder
-xcode_scheme: LimitedTableExample
 xcode_sdk: iphonesimulator10.0
 osx_image: xcode8
+# xcode_workspace: LimitedTableExample.xcworkspace # path to your xcodeproj folder
+xcode_project: LimitedTableExample.xcodeproject
+xcode_scheme: LimitedTableExample
+
+before_install:
+- brew update
+- brew outdated xctool || brew upgrade xctool
+- gem install xcpretty -N
+
+
+script:
+- xctool -project LimitedTableExample.xcodeproj -scheme LimitedTableExample -sdk iphonesimulator10.0 -destination "platform=iOS Simulator,name=iPhone 6" ONLY_ACTIVE_ARCH=YES build | xcpretty -c
+
+
+
+
+# http://docs.travis-ci.com/user/languages/objective-c/
+
