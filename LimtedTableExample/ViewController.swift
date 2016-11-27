@@ -56,15 +56,15 @@ class ViewController: UIViewController {
 //MARK: - UITableViewDataSource
 
 extension ViewController : UITableViewDataSource {
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return intervalNames.count
     }
     
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(intervalCellIdentifier, forIndexPath: indexPath) as UITableViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: intervalCellIdentifier, for: indexPath) as UITableViewCell
         
-        cell.accessoryType = .None
+        cell.accessoryType = .none
         cell.textLabel?.text = intervalNames[indexPath.row]
         
         return cell
@@ -76,15 +76,15 @@ extension ViewController : UITableViewDataSource {
 
 extension ViewController : UITableViewDelegate {
     
-    func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
         
         if let sr = tableView.indexPathsForSelectedRows {
             if sr.count == limit {
                 let alertController = UIAlertController(title: "Oops", message:
-                    "You are limited to \(limit) selections", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: {action in
+                    "You are limited to \(limit) selections", preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: {action in
                 }))
-                self.presentViewController(alertController, animated: true, completion: nil)
+                self.present(alertController, animated: true, completion: nil)
                 
                 return nil
             }
@@ -93,13 +93,13 @@ extension ViewController : UITableViewDelegate {
         return indexPath
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print("selected  \(intervalNames[indexPath.row])")
 
-        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-            if cell.selected {
-                cell.accessoryType = .Checkmark
+        if let cell = tableView.cellForRow(at: indexPath) {
+            if cell.isSelected {
+                cell.accessoryType = .checkmark
             }
         }
         
@@ -108,12 +108,12 @@ extension ViewController : UITableViewDelegate {
         }
     }
     
-    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         
         print("deselected  \(intervalNames[indexPath.row])")
         
-        if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-            cell.accessoryType = .None
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .none
         }
         
         if let sr = tableView.indexPathsForSelectedRows {
